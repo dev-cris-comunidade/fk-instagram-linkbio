@@ -1,0 +1,17 @@
+{
+  "name": "fk-instagram-linkbio",
+  "version": "1.0.0",
+  "description": "Link bio moderno para FK Rede Não Mono",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "npx serve src",
+    "build": "echo 'Build completed'",
+    "start": "npx serve src"
+  },
+  "keywords": ["linkbio", "fk", "rede", "nao-mono"],
+  "author": "FK Rede Não Mono",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
