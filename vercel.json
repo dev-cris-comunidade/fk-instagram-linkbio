@@ -10,42 +10,14 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
+      "source": "/",
+      "destination": "/src/index.html"
     },
     {
-      "src": "/manifest.json",
-      "dest": "/public/manifest.json"
-    },
-    {
-      "src": "/android-chrome-192x192.png",
-      "dest": "/public/android-chrome-192x192.png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "dest": "/public/android-chrome-512x512.png"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "dest": "/public/apple-touch-icon.png"
-    },
-    {
-      "src": "/sw.js",
-      "dest": "/sw.js"
-    },
-    {
-      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico))",
-      "dest": "/src/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/src/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/src/$1"
+      "source": "/(.*\\.(css|js))",
+      "destination": "/src/$1"
     }
   ],
   "headers": [
